@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, Button } from 'react-native'
 
-export default class Screen1 extends Component {
+export default class Screen3 extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text> Screen 1 </Text>
+                <Text> Screen 3 </Text>
+                <Button title="Ir a Screen1" onPress={() => this.props.navigation.navigate('Home')} />
                 <Button title="Ir a Screen2" onPress={() => this.props.navigation.navigate('SecondScreen')} />
-                <Button title="Ir a Screen3" onPress={() => this.props.navigation.navigate('ThirdScreen')} />
             </View>
         )
     }

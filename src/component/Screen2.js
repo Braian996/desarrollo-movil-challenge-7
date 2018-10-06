@@ -6,6 +6,8 @@ export default class Screen2 extends Component {
         return (
             <View style={styles.container}>
                 <Text> Screen 2 </Text>
+                <Button title="Ir a Screen1" onPress={() => this.props.navigation.navigate('Home')} />
+                <Button title="Ir a Screen3" onPress={() => this.props.navigation.navigate('ThirdScreen')} />
             </View>
         )
     }
